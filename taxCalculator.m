@@ -66,6 +66,7 @@ for i=1:numel(cTax18(:,1))-1
     elseif in>=cTax18(end,1)
         stateTax = stateTax + (in-cTax18(end,1))*cTax18(end,2)/100
         disp('3')
+        break
     end
 end
 for j=1:numel(fTax18(:,1))-1
@@ -79,6 +80,7 @@ for j=1:numel(fTax18(:,1))-1
     elseif in>=fTax18(end,1)
         federalTax = federalTax + (in-fTax18(end,1))*fTax18(end,2)/100
         disp('3')
+        break
     end
 end
 medicareTax = in*1.45/100
